@@ -24,15 +24,16 @@ module simple(
 // add your code here
 	always @(*)
 		case (a)
-			3'b000:result = 7'b0000000
-			3'b001:result = 7'b0000001
-			3'b010:result = 7'b0000011
-			3'b011:result = 7'b0000111
-			3'b100:result = 7'b0001111
-			3'b101:result = 7'b0011111
-			3'b110:result = 7'b0111111
-			3'b111:result = 7'b1111111
-		endcase;
+			3'b000:result = 7'b0000000;
+			3'b001:result = 7'b0000001;
+			3'b010:result = 7'b0000011;
+			3'b011:result = 7'b0000111;
+			3'b100:result = 7'b0001111;
+			3'b101:result = 7'b0011111;
+			3'b110:result = 7'b0111111;
+			3'b111:result = 7'b1111111;
+			// default:result = 7'b0000000
+			endcase;
 	end;
 endmodule;
 
